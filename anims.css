@@ -1,0 +1,64 @@
+.square1{
+   width: 100px;
+   height: 100px;
+   background-color:rgb(128, 0, 100);
+   animation-name: square;
+   animation-duration: 2s; 
+   margin: 20px;
+
+}
+
+.square2{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 20px;
+    animation-name: square2;
+    animation-duration: 5s;
+    position: relative;
+    animation-iteration-count: 2;
+    animation-delay: 2s;
+    /* animation-delay: -2s; */
+
+
+  
+}
+
+
+
+@keyframes square2{
+0%{
+    background-color: aqua;
+    left: 0px;
+    top: 0px;
+
+}
+25%{
+    background-color: blue;
+    left: 350px; top: 0px;
+
+}
+50%{
+    background-color: brown;
+    left: 350px; top: 150px;
+}
+75%{
+    background-color: black;
+    left: 0px;top:150px;
+}
+100%{
+    background-color: greenyellow;
+    left: 0px;
+    top: 0px;
+}
+
+
+}
+@keyframes square {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+    }
+}
